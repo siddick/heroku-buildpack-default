@@ -1,3 +1,6 @@
 #!/bin/bash
 
 echo "In Compile"
+
+echo ARGV[0]
+echo ARGV[1]
