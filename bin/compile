@@ -2,3 +2,4 @@
 
 echo "In Compile"
 echo $@
+echo $PWD
