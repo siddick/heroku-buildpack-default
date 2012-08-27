@@ -1,8 +1,9 @@
 #!/bin/bash
 
 BUNDLER_PATH=`type -p bundle`
+RUBY_PATH=`type -p ruby`
 cat <<EOF
 ---
 config_vars:
-  PATH: bin:`dirname $BUNDLER_PATH`:/usr/local/bin:/usr/bin:/bin
+  PATH: bin:`dirname $RUBY_PATH`:`dirname $BUNDLER_PATH`:/usr/local/bin:/usr/bin:/bin
 EOF
