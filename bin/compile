@@ -3,3 +3,5 @@
 echo "In Compile"
 echo $@
 echo $PWD
+
+mkdir -p bin
