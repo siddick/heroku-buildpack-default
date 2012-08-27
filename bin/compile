@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "In Compile"
-echo $@
-echo $PWD
-
-mkdir -p bin
+gem install bundler --no-ri --no-rdoc
+gem install foreman --no-ri --no-rdoc
+bundle install --path vendor/bundle

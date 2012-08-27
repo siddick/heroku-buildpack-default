@@ -1,7 +1,8 @@
 #!/bin/bash
 
+BUNDLER_PATH=`type -p bundle`
 cat <<EOF
 ---
 config_vars:
-  PATH: bin:/usr/local/bin:/usr/bin:/bin
+  PATH: bin:`dirname $BUNDLER_PATH`:/usr/local/bin:/usr/bin:/bin
 EOF
